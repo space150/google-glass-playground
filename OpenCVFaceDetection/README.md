@@ -1,8 +1,8 @@
-# OpenCV Image Manipulation
+# OpenCV Face Detection
 
-This application is a slightly modified version of the "Image Manipulation" sample that comes with the official OpenCV package. It has been modified to allow Google Glass users to swipe backwards and forwards to change the image manipulation type. This project does not serve any practical need, it is simply a test of OpenCV running on Google Glass. 
+This application is a slightly modified version of the "Face Detection" sample that comes with the official OpenCV package. This is just another test of the capabilities of OpenCV + Google Glass.
 
-![Screenshot](https://raw.github.com/space150/google-glass-playground/master/OpenCVImageManipulation/screenshot.png)
+![Screenshot](https://raw.github.com/space150/google-glass-playground/master/OpenCVFaceDetection/screenshot.png)
 
 ## Setup
 
@@ -14,4 +14,4 @@ This application is a slightly modified version of the "Image Manipulation" samp
 ## Usage
 
 * It is recommended you have some method for starting running the application on Google Glass, such as Mike DiGiovanni's [launchy](https://github.com/kaze0/launchy).
-* When the application has launched swipe forward and backward to view the next image manipulation technique.
+* When the application has launched swipe forward and backward to change the detected face size.
