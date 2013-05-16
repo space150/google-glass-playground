@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements SensorEventListener, Locat
 	protected void onResume() {
         super.onResume();
         mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_GAME);
-        mLocationManager.requestLocationUpdates(mLocationProvider, 400, 1, this);
+        mLocationManager.requestLocationUpdates(mLocationProvider, 400, 0.01f, this);
     }
 
     protected void onPause() {
