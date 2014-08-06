@@ -83,6 +83,7 @@ public class MainActivity extends Activity implements GestureDetector.OnGestureL
             if ( !mCameraConfigured ) 
             {
                 Camera.Parameters parameters = mCamera.getParameters();
+                parameters.setPreviewFpsRange(30000, 30000);
                 parameters.setPreviewSize(1920, 1080); // hard coded the largest size for now
                 mCamera.setParameters(parameters);
                 mCamera.setZoomChangeListener(this);
@@ -137,6 +138,7 @@ public class MainActivity extends Activity implements GestureDetector.OnGestureL
 	public boolean onFling( MotionEvent e1, MotionEvent e2, float velocityX, float velocityY ) 
 	{
 		Camera.Parameters parameters = mCamera.getParameters();
+	    parameters.setPreviewFpsRange(30000, 30000);
 		int zoom = parameters.getZoom();
 		
 		if ( velocityX < 0.0f )
